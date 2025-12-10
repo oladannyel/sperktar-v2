@@ -19,7 +19,11 @@
     }
 
     .glassmorphic-card {
-        @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-lg;
+        @apply bg-white/5 backdrop-blur-md border border-white/20 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-2px_rgba(0,0,0,0.1),0_0_15px_rgba(54,226,123,0.15)] transition-all duration-300;
+    }
+
+    .glassmorphic-card:hover {
+        @apply bg-white/10 border-white/30 shadow-[0_8px_12px_-4px_rgba(0,0,0,0.2),0_4px_8px_-4px_rgba(0,0,0,0.2),0_0_25px_rgba(54,226,123,0.25)];
     }
 
     .icon-background, .icon-container {

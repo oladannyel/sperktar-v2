@@ -1,6 +1,4 @@
 
-import ContactForm from '../components/ContactForm';
-
 export default function ContactPage() {
   return (
     <main className="container mx-auto px-4 py-16 pt-32">
@@ -9,15 +7,8 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <p className="mx-auto max-w-2xl text-lg font-light leading-relaxed text-gray-400">
-          Have a project in mind? We&apos;d love to hear from you. Fill out the
-          form below and we&apos;ll get back to you as soon as possible.
+          Have a project in mind? We&apos;d love to hear from you. You can reach us by clicking the floating contact button or the &quot;Get a Quote&quot; button in the header.
         </p>
-      </div>
-
-      <div className="mx-auto mt-12 max-w-2xl">
-        <div className="rounded-lg border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
-          <ContactForm />
-        </div>
       </div>
     </main>
   );

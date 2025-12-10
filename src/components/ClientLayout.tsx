@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Footer from './Footer';
 import ContactButton from './ContactButton';
-import ContactForm from './ContactForm';
+import ContactModal from './ContactModal';
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const [isContactFormVisible, setIsContactFormVisible] = useState(false);
@@ -34,7 +34,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
   return (
     <>
       <ContactButton onClick={toggleContactForm} isVisible={showContactButton} />
-      <ContactForm isVisible={isContactFormVisible} onClose={toggleContactForm} />
+      <ContactModal isVisible={isContactFormVisible} onClose={toggleContactForm} />
       <div className="relative flex min-h-screen w-full flex-col items-center overflow-x-hidden p-4 sm:p-6 md:p-8">
         <div className="absolute inset-0 -z-10 h-full w-full bg-background-dark">
           <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-primary/20 opacity-50 blur-[80px]"></div>
