@@ -7,7 +7,7 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ icon, title, description, isLarge }: ServiceCardProps) {
-  const cardClasses = `glassmorphic-card group relative flex flex-col items-start rounded-lg p-6 text-left ${isLarge ? 'md:col-span-2' : ''} hover:bg-white/10 transition-all`;
+  const cardClasses = `glassmorphic-card group relative flex flex-col items-start rounded-lg p-6 text-left ${isLarge ? 'md:col-span-2' : ''} hover:bg-white/10 transition-all transform hover:scale-105 transition-transform duration-300`;
 
   return (
     <div className={cardClasses}>
