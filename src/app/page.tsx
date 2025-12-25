@@ -125,28 +125,28 @@ export default function Home() {
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
 <div className="flex items-center gap-3 p-4 rounded-lg border border-white/5 bg-white/[0.02] hover:bg-white/5 transition-colors">
 <span className="material-symbols-outlined text-primary text-2xl">dataset</span>
-<div class="flex flex-col">
+<div className="flex flex-col">
 <span className="text-white/90 text-sm font-bold">Data & AI</span>
 <span className="text-white/40 text-xs">Intelligent automation</span>
 </div>
 </div>
 <div className="flex items-center gap-3 p-4 rounded-lg border border-white/5 bg-white/[0.02] hover:bg-white/5 transition-colors">
 <span className="material-symbols-outlined text-blue-400 text-2xl">devices</span>
-<div class="flex flex-col">
+<div className="flex flex-col">
 <span className="text-white/90 text-sm font-bold">Mobile/Web Apps</span>
 <span className="text-white/40 text-xs">Cross-platform solutions</span>
 </div>
 </div>
 <div className="flex items-center gap-3 p-4 rounded-lg border border-white/5 bg-white/[0.02] hover:bg-white/5 transition-colors">
 <span className="material-symbols-outlined text-purple-400 text-2xl">cloud</span>
-<div class="flex flex-col">
+<div className="flex flex-col">
 <span className="text-white/90 text-sm font-bold">Cloud Infrastructure</span>
 <span className="text-white/40 text-xs">Scalable architecture</span>
 </div>
 </div>
 <div className="flex items-center gap-3 p-4 rounded-lg border border-white/5 bg-white/[0.02] hover:bg-white/5 transition-colors">
 <span className="material-symbols-outlined text-pink-400 text-2xl">palette</span>
-<div class="flex flex-col">
+<div className="flex flex-col">
 <span className="text-white/90 text-sm font-bold">Research & Design</span>
 <span className="text-white/40 text-xs">User-centric experiences</span>
 </div>

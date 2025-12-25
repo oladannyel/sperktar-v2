@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background-dark text-text-secondary selection:bg-primary selection:text-white;
+  @apply bg-background-dark text-text-secondary selection:bg-primary selection:text-white !important;
 }
 
 .glassmorphic-card {
