@@ -156,12 +156,6 @@ export default function Home() {
 </div>
 </div>
 </div>
-
-<div className="w-full max-w-6xl mx-auto text-center mt-12 mb-16">
-  <Link href="/work" className="inline-block bg-white/5 border border-white/10 rounded-full px-8 py-4 text-white font-bold text-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
-    View All Work
-  </Link>
-</div>
 <RecentWork />
 
 <section className="relative w-full flex-grow flex items-center justify-center py-20 px-6 overflow-hidden">

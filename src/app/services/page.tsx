@@ -1,6 +1,72 @@
 
 import Link from 'next/link';
 
+const services = [
+  {
+    title: "Strategy",
+    description: "Charting the course from idea to market-fit with data-driven insights.",
+    icon: "explore",
+    href: "/services/strategy",
+  },
+  {
+    title: "UX/UI Design",
+    description: "Crafting intuitive, user-centric and beautiful digital experiences.",
+    icon: "layers",
+    href: "/services/ux-ui-design",
+  },
+  {
+    title: "Engineering",
+    description: "Building robust, scalable, and secure software architectures.",
+    icon: "code",
+    href: "/services/engineering",
+  },
+  {
+    title: "MVP Development",
+    description: "Launch faster with a powerful Minimum Viable Product designed to test hypotheses and gain traction quickly.",
+    icon: "rocket_launch",
+    href: "/services/mvp-development",
+  },
+  {
+    title: "Dedicated Teams",
+    description: "Augment your team with our world-class engineering talent.",
+    icon: "groups",
+    href: "/services/dedicated-teams",
+  },
+];
+
+const detailspage = [
+  {
+    title: "Strategy",
+    description: "Charting the course from idea to market-fit with data-driven insights.",
+    icon: "explore",
+    href: "/services/strategy",
+  },
+  {
+    title: "UX/UI Design",
+    description: "Crafting intuitive, user-centric and beautiful digital experiences.",
+    icon: "layers",
+    href: "/services/ux-ui-design",
+  },
+  {
+    title: "Engineering",
+    description: "Building robust, scalable, and secure software architectures.",
+    icon: "code",
+    href: "/services/engineering",
+  },
+  {
+    title: "MVP Development",
+    description: "Launch faster with a powerful Minimum Viable Product designed to test hypotheses and gain traction quickly.",
+    icon: "rocket_launch",
+    href: "/services/mvp-development",
+  },
+  {
+    title: "Dedicated Teams",
+    description: "Augment your team with our world-class engineering talent.",
+    icon: "groups",
+    href: "/services/dedicated-teams",
+  },
+];
+
 export default function ServicesPage() {
   return (
     <div className="relative flex min-h-screen w-full flex-col items-center overflow-x-hidden p-4 sm:p-6 md:p-8">
@@ -18,126 +84,40 @@ export default function ServicesPage() {
             You focus on the business. We build the tech. A complete product development lifecycle under one roof.
           </p>
           <div className="grid w-full max-w-5xl grid-cols-1 gap-6 pt-12 md:grid-cols-3">
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">explore</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Strategy</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed">Charting the course from idea to market-fit with data-driven insights.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">layers</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">UX/UI Design</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed">Crafting intuitive, user-centric and beautiful digital experiences.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">code</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Engineering</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed">Building robust, scalable, and secure software architectures.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left md:col-span-2">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">rocket_launch</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">MVP Development</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed max-w-md">Launch faster with a powerful Minimum Viable Product designed to test hypotheses and gain traction quickly.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">groups</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Dedicated Teams</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed">Augment your team with our world-class engineering talent.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
+            {services.map((service, index) => (
+              <Link href={service.href} key={index} className={`glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full ${service.title === "MVP Development" ? "md:col-span-2" : ""}`}>
+                <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
+                  <span className="material-symbols-outlined text-primary text-3xl">{service.icon}</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
+                <p className={`text-sm font-normal text-muted leading-relaxed ${service.title === "MVP Development" ? "max-w-md" : ""}`}>{service.description}</p>
+                <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                  <span className="material-symbols-outlined text-primary">arrow_forward</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </main>
         <section className="flex flex-col items-center gap-8 px-4 py-16 text-center sm:py-24">
           <h2 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
-            What We Offer
+            Explore Our Services
           </h2>
           <p className="max-w-2xl text-base font-normal leading-relaxed text-secondary-text sm:text-lg">
-            From startups to enterprises, we provide a full spectrum of digital services to bring your ideas to life.
+            Click on a service to learn more about how we can help you achieve your goals.
           </p>
           <div className="grid w-full max-w-5xl grid-cols-1 gap-6 pt-12 md:grid-cols-3">
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">web</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Web Application Development</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed">Modern, scalable, and secure web applications tailored to your business needs.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">phone_iphone</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Mobile Application Development</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed">Engaging and high-performance mobile apps for iOS and Android.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">smart_toy</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">AI & Machine Learning</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed">Integrate intelligent solutions to automate and enhance your business processes.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">cloud</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Cloud & DevOps</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed">Streamline your development and deployment with our cloud and DevOps expertise.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">design_services</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">UI/UX Design</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed">Create beautiful and intuitive user interfaces that your users will love.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
-            <div className="glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full">
-              <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
-                <span className="material-symbols-outlined text-primary text-3xl">campaign</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Branding & Strategy</h3>
-              <p className="text-sm font-normal text-muted leading-relaxed">Build a strong brand identity that resonates with your target audience.</p>
-              <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="material-symbols-outlined text-primary">arrow_forward</span>
-              </div>
-            </div>
+            {detailspage.map((service, index) => (
+              <Link href={service.href} key={index} className={`glassmorphic-card group relative flex flex-col items-start rounded-2xl p-8 text-left h-full ${service.title === "MVP Development" ? "md:col-span-2" : ""}`}>
+                <div className="icon-background mb-5 flex size-14 items-center justify-center rounded-xl">
+                  <span className="material-symbols-outlined text-primary text-3xl">{service.icon}</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
+                <p className={`text-sm font-normal text-muted leading-relaxed ${service.title === "MVP Development" ? "max-w-md" : ""}`}>{service.description}</p>
+                <div className="absolute right-6 top-6 opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                  <span className="material-symbols-outlined text-primary">arrow_forward</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </section>
         <section className="relative z-10 mx-auto flex w-full max-w-6xl flex-col px-4 sm:px-6 lg:px-8">
