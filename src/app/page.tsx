@@ -34,7 +34,7 @@ export default function Home() {
                   <div className="flex flex-col gap-4">
                     <h2 className="text-2xl font-bold text-white">Have an idea?</h2>
                     <p className="text-text-secondary">
-                      Let's partner to build your MVP and scale your vision. Get a proposal in 48 hours.
+                      Let's partner to build your MVP and scale your vision. Get a proposal in 24 hours.
                     </p>
                     <div className="mt-4">
                         <Link href="/contact" className="inline-flex items-center gap-2 bg-primary text-black font-bold px-6 py-3 rounded-full hover:bg-primary/90 transition-colors text-sm">
@@ -199,11 +199,11 @@ export default function Home() {
             {/* Trust indicators / Stats (Optional enhancement for "Social Proof") */}
             <div className="grid grid-cols-3 gap-4 px-2">
               <div className="flex flex-col gap-1">
-                <span className="text-3xl font-bold text-white">50+</span>
+                <span className="text-3xl font-bold text-white">20+</span>
                 <span className="text-sm text-text-secondary">MVPs Shipped</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="text-3xl font-bold text-white">98%</span>
+                <span className="text-3xl font-bold text-white">90%</span>
                 <span className="text-sm text-text-secondary">Client Retention</span>
               </div>
               <div className="flex flex-col gap-1">
