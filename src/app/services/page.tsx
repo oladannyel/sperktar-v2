@@ -54,6 +54,48 @@ const detailspage = [
     href: "/services/engineering",
   },
   {
+    title: "Product Management",
+    description: "From concept to launch, we guide your product's journey to success.",
+    icon: "assignment",
+    href: "/services/product-management",
+  },
+  {
+    title: "DevOps",
+    description: "Streamline your development and deployment with our DevOps expertise.",
+    icon: "engineering",
+    href: "/services/devops",
+  },
+  {
+    title: "LLMOps",
+    description: "Operationalize and scale your large language models with our LLMOps solutions.",
+    icon: "model_training",
+    href: "/services/llmops",
+  },
+  {
+    title: "Data Analytics",
+    description: "Turn your data into actionable insights with our data analytics services.",
+    icon: "analytics",
+    href: "/services/data-analytics",
+  },
+  {
+    title: "Go-To-Market Strategy",
+    description: "We help you launch your product and achieve market traction.",
+    icon: "campaign",
+    href: "/services/go-to-market-strategy",
+  },
+  {
+    title: "Mobile App Development",
+    description: "Engaging and high-performance mobile apps for iOS and Android.",
+    icon: "phone_iphone",
+    href: "/services/mobile-app-development",
+  },
+  {
+    title: "Web Development",
+    description: "Modern, scalable, and secure web applications tailored to your business needs.",
+    icon: "web",
+    href: "/services/web-development",
+  },
+  {
     title: "MVP Development",
     description: "Launch faster with a powerful Minimum Viable Product designed to test hypotheses and gain traction quickly.",
     icon: "rocket_launch",
@@ -246,7 +288,7 @@ export default function ServicesPage() {
               <div className="text-left lg:pl-10">
                 <h4 className="font-display text-primary text-sm font-bold uppercase tracking-widest mb-3">Phase Three</h4>
                 <h3 className="font-display text-4xl font-bold text-white mb-6">Engineering the Future</h3>
-                <p className="font-display text-[#E5E7EB] text-lg leading-relaxed opacity-90">Our developers turn the designs into a high-performance, secure, and scalable application. We follow agile methodologies to deliver consistent progress and adapt to changes, ensuring the final product exceeds expectations.</p>
+                <p className="font-display text-[#E5E7EB] atext-lg leading-relaxed opacity-90">Our developers turn the designs into a high-performance, secure, and scalable application. We follow agile methodologies to deliver consistent progress and adapt to changes, ensuring the final product exceeds expectations.</p>
               </div>
             </div>
             <div className="group grid grid-cols-1 lg:grid-cols-2 items-center gap-16">

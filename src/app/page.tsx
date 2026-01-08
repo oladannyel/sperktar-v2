@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import RecentWork from '../components/RecentWork';
 import LeadooInPageBot from '../components/LeadooInPageBot';
+import Testimonials from '../components/Testimonials';
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         <main className="flex-grow flex flex-col items-center justify-center py-12 lg:py-20 gap-8">
           <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-8">
             <div className="lg:col-span-3 flex items-center">
-              <div className="glass-panel rounded-xl p-8 md:p-12 lg:p-16 w-full h-full flex flex-col justify-center">
+              <div className="glassmorphic-card rounded-xl p-8 md:p-12 lg:p-16 w-full h-full flex flex-col justify-center">
                 <div className="flex flex-col gap-6 text-left">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-tight text-white">
                                 You focus on the business. We build the tech.
@@ -30,7 +31,7 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:col-span-2 flex items-center">
-                <div className="glass-panel rounded-xl p-8 w-full h-full flex flex-col justify-center">
+                <div className="glassmorphic-card rounded-xl p-8 w-full h-full flex flex-col justify-center">
                   <div className="flex flex-col gap-4">
                     <h2 className="text-2xl font-bold text-white">Have an idea?</h2>
                     <p className="text-text-secondary">
@@ -91,7 +92,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full max-w-6xl mx-auto pt-8">
-<div className="glass-panel rounded-2xl p-8 md:p-12 lg:p-20 relative overflow-hidden group">
+<div className="glassmorphic-card rounded-2xl p-8 md:p-12 lg:p-20 relative overflow-hidden group">
 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-b from-blue-500/10 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-gradient-to-t from-primary/5 to-transparent rounded-full blur-3xl translate-y-1/3 -translate-x-1/3 pointer-events-none"></div>
 
@@ -169,7 +170,7 @@ export default function Home() {
         <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Text Content Column */}
           <div className="lg:col-span-7 flex flex-col gap-8 order-2 lg:order-1">
-            <div className="glass-panel p-8 md:p-12 rounded-2xl relative overflow-hidden group">
+            <div className="glassmorphic-card p-8 md:p-12 rounded-2xl relative overflow-hidden group">
               {/* Subtle border glow on hover */}
               <div className="absolute inset-0 border border-primary/0 group-hover:border-primary/20 rounded-2xl transition-all duration-700 pointer-events-none"></div>
 
@@ -220,7 +221,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background-dark/90 z-10"></div>
               <img alt="Futuristic Technology Abstract" className="w-full h-full object-cover object-center opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQidGpeLuserm6tSe2VdrYWsO_wq5DNo2bmhOOEeoh4rxbTTvrR4ggXqr7JjhkImRQCKUM1b1nvW1sYgBZG49C0OtODYawGIa-LQUHlKo8sY2hkMQxOezqNT4QwWHFGesIFc5zBC0dyvfIANJHQLABl0pThw9z9ODqjGO_sgT_rALLMWpO-KgxPYFpqY0D7-8SugCVg1pS_EKJhl2sWWNB0qNptcsAPkwuV6HoTyxeAlhXQUmVcQZJMTEzY0_Dm5p-7S9Cye0RkB1H"/>
               {/* Floating Tech Cards Decoration */}
-              <div className="absolute top-1/4 -left-6 z-20 glass-panel p-4 rounded-xl flex items-center gap-3 animate-[pulse_4s_ease-in-out_infinite]">
+              <div className="absolute top-1/4 -left-6 z-20 glassmorphic-card p-4 rounded-xl flex items-center gap-3 animate-[pulse_4s_ease-in-out_infinite]">
                 <div className="p-2 bg-primary/20 rounded-lg text-primary">
                   <span className="material-symbols-outlined">code</span>
                 </div>
@@ -229,7 +230,7 @@ export default function Home() {
                   <span className="text-white font-bold text-sm">Scalable &amp; Secure</span>
                 </div>
               </div>
-              <div className="absolute bottom-1/3 -right-4 z-20 glass-panel p-4 rounded-xl flex items-center gap-3 animate-[pulse_5s_ease-in-out_infinite]" style={{ animationDelay: '1s' }}>
+              <div className="absolute bottom-1/3 -right-4 z-20 glassmorphic-card p-4 rounded-xl flex items-center gap-3 animate-[pulse_5s_ease-in-out_infinite]" style={{ animationDelay: '1s' }}>
                 <div className="p-2 bg-purple-500/20 rounded-lg text-purple-400">
                   <span className="material-symbols-outlined">psychology</span>
                 </div>
@@ -243,6 +244,7 @@ export default function Home() {
         </div>
       </section>
 
+<Testimonials />
 <LeadooInPageBot />
         </main>
       </div>
