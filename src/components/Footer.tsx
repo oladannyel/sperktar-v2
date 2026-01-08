@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Footer = () => {
   const navLinks = [
     { href: '/services', label: 'Services' },
-    { href: '/work', label: 'Work' },
+    { href: '/work', label: 'Our Work' },
     { href: '#', label: 'About' },
     { href: '#', label: 'Contact' },
   ];
@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className="size-8 text-primary">
                     <span className="material-symbols-outlined text-4xl">layers</span>
                 </div>
-                <h2 className="text-white text-xl font-bold tracking-tight">speckter</h2>
+                <h2 className="text-white text-xl font-bold tracking-tight">sperktar</h2>
             </Link>
             <p className="text-sm text-secondary-text/60 max-w-sm">
                 A digital agency specializing in scalable systems, MVPs, and digital platforms for ambitious startups.
